@@ -6,9 +6,31 @@
 body {
   background: white; }
 
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 15px; }
+
 .attribution {
   font-size: 11px;
   text-align: center; }
 
 .attribution a {
   color: #3e52a3; }
+
+.container {
+  background: red;
+  width: 100%;
+  height: 95vh;
+  display: flex;
+  padding: 2em 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+
+.card {
+  background: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 1em; }

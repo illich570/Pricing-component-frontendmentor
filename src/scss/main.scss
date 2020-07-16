@@ -1,9 +1,11 @@
 @import 'utils/variables';
+@import 'utils/mixins';
 
 @import 'base/reset';
 @import 'base/typography';
 
 
 @import 'layout/footer';
+@import 'layout/grid';
 
-@import 'components/cards';
+@import 'components/card';
