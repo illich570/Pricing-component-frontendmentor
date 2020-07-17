@@ -12,25 +12,58 @@ body {
   font-size: 15px; }
 
 .attribution {
-  font-size: 11px;
   text-align: center; }
 
 .attribution a {
   color: #3e52a3; }
 
 .container {
-  background: red;
   width: 100%;
-  height: 95vh;
   display: flex;
-  padding: 2em 0;
+  padding: 2em 1.5em;
   display: flex;
   align-items: center;
   flex-direction: column; }
 
 .card {
-  background: white;
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 1em; }
+  box-shadow: 1px 1px 10px 1px #cecece;
+  background: white;
+  margin-bottom: 1.5em;
+  border-radius: 10px;
+  width: 100%;
+  padding: 1.5em 0; }
+
+.card__currency {
+  font-size: 2.2em; }
+
+.card__amount {
+  font-size: 3.5em; }
+
+.card__price {
+  display: flex;
+  align-items: center;
+  margin: 1em 0; }
+
+.container__cards {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  width: 100%; }
+
+.title {
+  margin-bottom: 2em; }
+
+.container__checkbox {
+  display: flex;
+  width: 100%;
+  background: red;
+  justify-content: space-evenly;
+  margin-bottom: 4em; }
+
+.checkbox {
+  height: 40px;
+  width: 100px; }

@@ -1,5 +1,30 @@
 .card{
-  background: white;
   @include flex-column;
-  margin-bottom: 1em;
+  @include box-shadow;
+  background: white;
+  margin-bottom: 1.5em;
+  border-radius: 10px;
+  width: 100%;
+  padding: 1.5em 0;
+}
+
+
+.card__currency{
+  font-size: 2.2em;
+}
+
+.card__amount{
+  font-size: 3.5em;
+}
+
+.card__price{
+  display: flex;
+  align-items: center;
+  margin: 1em 0;
+}
+
+.container__cards{
+  @include flex-column;
+  display: flex;
+  width: 100%;
 }
