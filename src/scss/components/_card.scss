@@ -5,22 +5,35 @@
   margin-bottom: 1.5em;
   border-radius: 10px;
   width: 100%;
-  padding: 1.5em 0;
-}
-
-
-.card__currency{
-  font-size: 2.2em;
-}
-
-.card__amount{
-  font-size: 3.5em;
-}
-
-.card__price{
-  display: flex;
-  align-items: center;
-  margin: 1em 0;
+  padding: 1.5em 1.8em;
+  &__currency{
+    font-size: 2.2em;
+  }
+  &__amount{
+    font-size: 3.5em;
+  }
+  &__price{
+    display: flex;
+    align-items: center;
+    margin: 1em 0;
+  }
+  &__row{
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding: 0.8em 0;
+    &:first-of-type{
+      border-top: 1px solid black;
+    }
+    &:last-of-type{
+      margin-bottom: 1.6em;
+    }
+  }
+  &__features{
+    width: 100%;
+  }
+  &__button{
+    width: 100%;
+  }
 }
 
 .container__cards{

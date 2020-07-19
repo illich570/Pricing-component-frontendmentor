@@ -19,7 +19,6 @@ body {
 
 .container {
   width: 100%;
-  display: flex;
   padding: 2em 1.5em;
   display: flex;
   align-items: center;
@@ -34,18 +33,27 @@ body {
   margin-bottom: 1.5em;
   border-radius: 10px;
   width: 100%;
-  padding: 1.5em 0; }
-
-.card__currency {
-  font-size: 2.2em; }
-
-.card__amount {
-  font-size: 3.5em; }
-
-.card__price {
-  display: flex;
-  align-items: center;
-  margin: 1em 0; }
+  padding: 1.5em 1.8em; }
+  .card__currency {
+    font-size: 2.2em; }
+  .card__amount {
+    font-size: 3.5em; }
+  .card__price {
+    display: flex;
+    align-items: center;
+    margin: 1em 0; }
+  .card__row {
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding: 0.8em 0; }
+    .card__row:first-of-type {
+      border-top: 1px solid black; }
+    .card__row:last-of-type {
+      margin-bottom: 1.6em; }
+  .card__features {
+    width: 100%; }
+  .card__button {
+    width: 100%; }
 
 .container__cards {
   display: flex;
@@ -55,15 +63,61 @@ body {
   width: 100%; }
 
 .title {
-  margin-bottom: 2em; }
+  margin-bottom: 2em;
+  font-size: 1.4em; }
 
-.container__checkbox {
+.container__switch {
   display: flex;
   width: 100%;
-  background: red;
   justify-content: space-evenly;
-  margin-bottom: 4em; }
+  margin-bottom: 4em;
+  align-items: center; }
 
-.checkbox {
-  height: 40px;
-  width: 100px; }
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px; }
+  .switch input {
+    display: none; }
+    .switch input:checked + .slider {
+      background: #2196F3; }
+    .switch input:focus + .slider {
+      box-shadow: 0 0 1px #2196F3; }
+    .switch input:checked + .slider:before {
+      -webkit-transform: translateX(1.75em);
+      -ms-transform: translateX(1.75em);
+      transform: translateX(1.75em); }
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 3em; }
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 1.75em;
+    width: 1.75em;
+    left: 4px;
+    bottom: 4px;
+    background: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%; }
+
+button {
+  font-family: "Montserrat", sans-serif; }
+
+.button {
+  width: 100%;
+  padding: 0.8em 0;
+  border: 0;
+  border-radius: 10px;
+  text-transform: uppercase; }
