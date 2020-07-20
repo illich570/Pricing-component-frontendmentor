@@ -1,9 +1,10 @@
 .container__switch{
   display: flex;
   width: 100%;
-  justify-content: space-evenly;
+  justify-content: center;
   margin-bottom: 4em;
   align-items: center;
+  color: $light-gray-blue;
 }
 
 .switch {
@@ -11,14 +12,9 @@
   display: inline-block;
   width: 60px;
   height: 34px;
+  margin: 0 2.5em;
   input{
-    display: none;
-    &:checked + .slider{
-      background: #2196F3;
-    }
-    &:focus + .slider {
-      box-shadow: 0 0 1px #2196F3;
-    }
+    opacity: 0;
     &:checked + .slider:before {
       -webkit-transform: translateX(1.75em);
       -ms-transform: translateX(1.75em);
@@ -34,7 +30,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: #ccc;
+  background-image: $linear-purple;
   -webkit-transition: .4s;
   transition: .4s;
   border-radius: 3em;
