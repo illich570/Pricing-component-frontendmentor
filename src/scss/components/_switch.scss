@@ -2,7 +2,7 @@
   display: flex;
   width: 100%;
   justify-content: center;
-  margin-bottom: 4em;
+  margin-bottom: 3em;
   align-items: center;
   color: $light-gray-blue;
 }
@@ -11,7 +11,7 @@
   position: relative;
   display: inline-block;
   width: 60px;
-  height: 34px;
+  height: 2.2em;
   margin: 0 2.5em;
   input{
     opacity: 0;
@@ -31,9 +31,12 @@
   right: 0;
   bottom: 0;
   background-image: $linear-purple;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: .4s all ease;
+  transition: .4s all ease;
   border-radius: 3em;
+  &:hover{
+    background: $light-gray-blue;
+  }
   &:before {
     position: absolute;
     content: "";

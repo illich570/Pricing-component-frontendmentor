@@ -12,8 +12,19 @@ button{
   letter-spacing: 0.1em;
   background-image: $linear-purple;
   color: white;
+  transition: ease all .4s;
   &.alternate{
     background: white;
+    color: $full-purple;
+    &:hover{
+      background-image: $linear-purple;
+      color: white;
+      border: 1px solid white;
+    }
+  }
+  &:hover{
+    background: white;
+    border: 1px solid $full-purple;
     color: $full-purple;
   }
 }
