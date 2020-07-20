@@ -81,6 +81,9 @@ body {
   .card__button {
     width: 100%; }
 
+.month {
+  display: none; }
+
 .alternate {
   background: linear-gradient(to right, #a3a8f0, #696fdd); }
   .alternate .card__title {
@@ -121,7 +124,7 @@ body {
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
+  width: 55px;
   height: 2.2em;
   margin: 0 2.5em; }
   .switch input {
